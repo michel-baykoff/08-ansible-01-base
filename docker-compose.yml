@@ -1,0 +1,21 @@
+services:
+  ubuntu:
+    image: ubuntu:latest
+    container_name: ubuntu
+    hostname: ubuntu
+    tty: true
+    networks:
+      - netology-ansible-network
+  centos7:
+    image: centos:centos7
+    container_name: centos7
+    hostname: centos7
+    tty: true
+    networks:
+      - netology-ansible-network
+
+volumes:
+  netology-ansible-volume:
+
+networks:
+  netology-ansible-network:
